@@ -6,10 +6,13 @@ import com.codewithdurgesh.blog.payloads.UserDto;
 
 public interface UserService {
 	UserDto createUser(UserDto userDto);
-	 UserDto updateUser(UserDto user , Integer userId);
-	 UserDto getUserById(Integer userId);
-	 List<UserDto> getAllUsers();
-	 void deleteUser(Integer userId);
-	 
+
+	UserDto updateUser(UserDto user, Integer userId);
+
+	UserDto getUserById(Integer userId);
+
+	List<UserDto> getAllUsers();
+
+	void deleteUser(Integer userId);
 
 }
