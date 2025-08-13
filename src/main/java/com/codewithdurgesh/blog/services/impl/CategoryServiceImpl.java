@@ -29,7 +29,7 @@ public class CategoryServiceImpl implements CategoryService{
 	}
 
 	@Override
-	public CategoryDto updateCategory(CategoryDto categoryDto, Integer categoryId) {
+	public CategoryDto  updateCategory(CategoryDto categoryDto, Integer categoryId) {
 		Category category = this.categoryRepo.findById(categoryId).orElseThrow(()-> new ResourceNotFoundException("Category", "categoryId", categoryId));
 		category.setDescription(categoryDto.getDescription());
 		category.setTitle(categoryDto.getTitle());
