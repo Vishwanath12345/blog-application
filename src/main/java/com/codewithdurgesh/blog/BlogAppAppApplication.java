@@ -10,6 +10,7 @@ public class BlogAppAppApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BlogAppAppApplication.class, args);
+		
 	}
 	
 	@Bean

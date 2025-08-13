@@ -1,5 +1,6 @@
 package com.codewithdurgesh.blog.payloads;
 
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
@@ -10,6 +11,8 @@ import lombok.Setter;
 @Getter
 @Setter
 public class CategoryDto {
+	@Id
+	private Integer categoryId;
 
     @NotBlank(message = "Title is required")
     @Size(min = 3, max = 100, message = "Title must be between 3 and 100 characters")
